@@ -1,0 +1,19 @@
+procedure provsum(x, y:longint; var prov:longint);
+begin
+  if x > y then
+    if x mod 2 = 0 then
+      prov:= x
+    else
+      if y mod 2 = 0 then
+        prov:=y;
+end;
+var x,y,sum,prov:longint;
+begin
+  while (x<>-1) or (x<>-1) do
+    begin
+    read(x, y);
+    provsum(x, y, prov);
+    sum+=prov;
+    end;
+   write(sum);
+end.
